@@ -1,7 +1,25 @@
-/* Custom styles for the header */
+/* Ensure the body and html take up the full height of the viewport */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Full height container */
+.container-fluid {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Full viewport height */
+}
+
+/* Header */
 .header {
     background-color: #282f36;
     padding: 20px 0;
+    flex: 2; /* Takes up a bit more space */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .header h1 {
@@ -10,28 +28,44 @@
     color: #f8f3f3;
 }
 
-/* Banner styling */
-.banner img {
-    width: 100%; /* Ensure the image spans the full width */
-    height: auto; /* Maintain aspect ratio */
+/* Banner */
+.banner {
+    flex: 5; /* This will take most of the space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* Footer styling */
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image looks good and fills space */
+}
+
+/* Footer */
 .footer {
     background-color: #282f36;
     padding: 20px 0;
-
+    flex: 2; /* Increases height slightly */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 }
 
-.footer h3, .footer h1 {
+.footer h1, .footer h2 {
     font-family: 'Montserrat', sans-serif;
     color: #f8f3f3;
 }
 
-/* Contact button styling */
+/* Contact section */
 .contact {
     background-color: #282f36;
     padding: 20px 0;
+    flex: 2; /* More height to balance */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .contact .btn {
@@ -40,15 +74,11 @@
     padding: 10px 30px;
 }
 
-/* Copyright styling */
+/* Copyright */
 .copyright {
     background-color: #333;
     color: #fff;
     padding: 10px 0;
-}
-
-.copyright p {
-    margin: 0;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 0.9rem;
+    flex: 1; /* Smallest section */
+    text-align: center;
 }
