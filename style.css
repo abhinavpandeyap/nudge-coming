@@ -1,0 +1,54 @@
+/* Custom styles for the header */
+.header {
+    background-color: #282f36;
+    padding: 20px 0;
+}
+
+.header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #f8f3f3;
+}
+
+/* Banner styling */
+.banner img {
+    width: 100%; /* Ensure the image spans the full width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Footer styling */
+.footer {
+    background-color: #282f36;
+    padding: 20px 0;
+
+}
+
+.footer h3, .footer h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: #f8f3f3;
+}
+
+/* Contact button styling */
+.contact {
+    background-color: #282f36;
+    padding: 20px 0;
+}
+
+.contact .btn {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    padding: 10px 30px;
+}
+
+/* Copyright styling */
+.copyright {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.copyright p {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+}
